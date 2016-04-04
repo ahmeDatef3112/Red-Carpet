@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.view.negrop1.MovieDetail" android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="#FDFDFD"
+    android:layout_height="match_parent">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" tools:context="com.view.negrop1.MovieDetail" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+
+    <TextView android:id="@+id/tvMovieName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" android:textColor="@android:color/white"
+        android:background="#D50000"
+        android:textSize="18dp" android:layout_weight="1"
+        android:paddingLeft="20dp" android:gravity="center|left"
+        android:elevation="3dp"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+    <ImageView android:id="@+id/ivMiniPoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_marginTop="5dp"
+       android:layout_gravity="top|center"/>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="1" android:layout_marginLeft="12dp">
+
+    <TextView android:id="@+id/tvReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" android:layout_marginTop="5dp"/>
+
+    <TextView android:id="@+id/tvDuration"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@android:color/black" android:textSize="18dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView android:id="@+id/tvVoteAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" android:layout_marginTop="5dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="0.6"
+        android:layout_marginBottom="7dp">
+
+    <TextView android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" android:paddingLeft="19dp"
+        android:layout_marginTop="4dp" android:paddingRight="18dp"/>
+
+</ScrollView>
+
+    <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@android:color/black" android:layout_marginLeft="17dp" android:layout_marginRight="17dp"/>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="0.8">
+
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+
+
+
+    <ImageView android:id="@+id/ivPlayTrailer1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="6dp" android:src="@drawable/play" android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    <TextView android:id="@+id/tvFirstTrailer" android:layout_width="0dp"
+        android:layout_height="wrap_content" android:textColor="@android:color/black"
+        android:textSize="18dp" android:layout_weight="3" android:layout_marginTop="11dp"
+        android:layout_marginRight="35dp" android:text="Trailer 1" android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    <View android:layout_width="fill_parent" android:layout_height="0.7dip" android:background="@color/button_material_light" android:layout_marginLeft="17dp" android:layout_marginRight="17dp"/>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="0.7">
+
+    <ImageView android:id="@+id/ivPlayTrailer2" android:layout_width="0dp"
+        android:layout_height="wrap_content" android:layout_weight="1" android:paddingLeft="10dp"
+        android:layout_marginLeft="6dp" android:src="@drawable/play" android:layout_gravity="center"/>
+
+    <TextView android:id="@+id/tvSecondTrailer"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:textColor="@android:color/black" android:textSize="18dp"
+        android:layout_weight="1.6" android:paddingLeft="12dp" android:text=" Trailer 2" android:layout_gravity="center"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:orientation="vertical" android:layout_weight="2">
+
+        <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="@android:color/black" android:layout_marginLeft="17dp" android:layout_marginRight="17dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp" android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <ImageView android:id="@+id/ivFirstAuthor" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" android:layout_marginTop="15dp" android:layout_marginLeft="18dp" android:src="@drawable/user"/>
+
+    <TextView android:id="@+id/tvFirstAuthor" android:layout_width="0dp"
+        android:layout_height="match_parent" android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_weight="0.8" android:layout_marginTop="15dp" android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"/>
+
+</LinearLayout>
+
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3" android:layout_marginTop="10dp" android:layout_marginLeft="70dp" android:layout_marginRight="17dp">
+
+    <TextView android:id="@+id/tvFirstReview"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_weight="1" android:layout_marginTop="10dp" android:layout_marginLeft="70dp" android:layout_marginRight="17dp"/>
+
+</ScrollView>
+
+    <View android:layout_width="fill_parent" android:layout_height="0.7dip" android:background="@color/button_material_light" android:layout_marginTop="10dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp"/>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:orientation="horizontal" android:layout_weight="1">
+
+    <ImageView android:id="@+id/ivSecondAuthor" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" android:layout_marginTop="15dp" android:layout_marginLeft="13dp" android:src="@drawable/user" android:layout_marginBottom="10dp"/>
+
+    <TextView android:id="@+id/tvSecondAuthor"
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:textColor="@android:color/black" android:layout_weight="0.7"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp"/>
+
+</LinearLayout>
+
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3" android:layout_marginTop="10dp" android:layout_marginLeft="70dp" android:layout_marginRight="17dp">
+
+    <TextView android:id="@+id/tvSecondReview"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:textColor="@android:color/black" android:layout_marginLeft="17dp" android:layout_marginRight="17dp"/>
+
+</ScrollView>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>

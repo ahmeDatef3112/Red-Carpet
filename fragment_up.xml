@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+    <FrameLayout
+    android:id="@+id/flUp"
+    tools:context="boldband.com.negro.UpFragment" android:layout_height="match_parent" android:background="@android:color/black"
+    android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GridView android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:verticalSpacing="3dp" android:horizontalSpacing="3dp"
+        android:numColumns="auto_fit" android:id="@+id/usage_up_gridview"/>
+
+</FrameLayout>
